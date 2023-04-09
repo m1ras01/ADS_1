@@ -64,7 +64,11 @@ public class Main {
                 n = s.nextInt();
                 System.out.print("Enter number k:");
                 int k = s.nextInt();
-                System.out.print("binomial coefficient is "+Task_9.binomialCoefficient(n,k));
+                System.out.print("binomial coefficient is: "+Task_9.binomialCoefficient(n,k));
+                break;
+            case 10:
+                System.out.println();
+
         }
     }
 
