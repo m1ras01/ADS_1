@@ -48,7 +48,11 @@ public class Main {
                 System.out.println("Degree A of n is "+Task_6.Pow(a,n));
                 break;
             case 7:
-
+                System.out.print("Enter length of array:");
+                n = s.nextInt();
+                arr = new int[n];
+                System.out.print("Enter the array:");
+                System.out.println("Array in reverse order ");
         }
     }
 
