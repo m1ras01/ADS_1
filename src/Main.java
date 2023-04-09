@@ -53,6 +53,8 @@ public class Main {
                 System.out.println("Enter the array: ");
                 Task_7.rec(n);
                 break;
+            case 8:
+
 
         }
     }
