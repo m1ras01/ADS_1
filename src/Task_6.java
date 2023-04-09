@@ -1,9 +1,9 @@
 public class Task_6 {
     public static int Pow(int a, int n) {
-        if (n == 0) {        // 0 ге тен болса быр шыгарамыз
-            return 1;        // себебы кез келген саннын 0 дарежесы бырге тен
+        if (n == 0) {        // if n is 0, return 1 because any number raised to the power of 0 is 1
+            return 1;
         } else {
-            return a * Pow(a, n - 1); // фнкция кайткан сон бызде н керысынше койылады ягни 1 ден бастап и ар саны бызде 4 тын кобейтылуыне комектеседы
-        }  // ягни ар цикл болганда а быр бырыне кобейе береды
+            return a * Pow(a, n - 1); // if n is not 0, recursively calculate a^n-1 and multiply the result by a
+        }
     }
 }

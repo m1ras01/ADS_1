@@ -1,9 +1,11 @@
 public class Task_4 {
     public static int factorial(int n) {
+        // Check if the number is less than or equal to 1, in which case its factorial is 1
         if (n <= 1) {
             return 1;
         } else {
-            return factorial(n - 1) * n;   // кері қарай н нын сандарын керы карай койып көбейтіліп отыра береді
-        }                                     // мысалы 3 ты енгыссек (1*2)= 2 * 3  = 6
+            // Recursively call the factorial function with n-1, and multiply the result by n
+            return factorial(n - 1) * n;
+        }
     }
 }

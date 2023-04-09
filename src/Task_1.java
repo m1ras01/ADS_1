@@ -1,12 +1,14 @@
 public class Task_1 {
     public static int minNum(int[] a, int n) {
-
-        if (n == 1)                                   //Егер n = 1 болса бізде массивтің ұзындығы бірге тең.
-            return a[0];                             //сол үшін біз массивтің бірінші санын шығарамыз.
-        else {                                      //else
-            int min = minNum(a, n - 1);            //Бұл жерде бізде функция қайтып отырады n == 1 болғанша.
-            return Math.min(min, a[n - 1]);       //бұл жерде бізде қалған жіберілген n дер кері ретпен ягни соңынан басна дейін қайтып фнкция сол жерден минимм ды тауып аламыз.
+        // Check if the length of the array is 1, if yes, return the first element
+        if (n == 1)
+            return a[0];
+        else {
+            // Recursively call the function with the length of the array reduced by one
+            int min = minNum(a, n - 1);
+            // Return the minimum value between the minimum value of the previous subarray and the last element of the current array
+            return Math.min(min, a[n - 1]);
         }
-
     }
+
 }
