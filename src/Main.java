@@ -54,6 +54,10 @@ public class Main {
                 Task_7.rec(n);
                 break;
             case 8:
+                System.out.print("Enter a String: ");
+                String str = s.nextLine();
+                System.out.print("is this all String digit ");
+                System.out.println(Task_8.CheckDigit(str));
 
 
         }
