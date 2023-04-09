@@ -51,8 +51,8 @@ public class Main {
                 System.out.print("Enter length of array: ");
                 n = s.nextInt();
                 System.out.println("Enter the array: ");
-
                 Task_7.rec(n);
+                break;
 
         }
     }
