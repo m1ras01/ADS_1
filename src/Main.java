@@ -67,8 +67,12 @@ public class Main {
                 System.out.print("binomial coefficient is: "+Task_9.binomialCoefficient(n,k));
                 break;
             case 10:
-                System.out.println();
-
+                System.out.print("Enter number a:");
+                a = s.nextInt();
+                System.out.print("Enter number b:");
+                int b = s.nextInt();
+                System.out.println("GCD: "+Task_10.GCD(a,b));
+                break;
         }
     }
 
