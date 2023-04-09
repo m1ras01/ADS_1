@@ -52,7 +52,8 @@ public class Main {
                 n = s.nextInt();
                 arr = new int[n];
                 System.out.print("Enter the array:");
-                System.out.println("Array in reverse order ");
+                System.out.print("Array in reverse order ");
+
         }
     }
 
