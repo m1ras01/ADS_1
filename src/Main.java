@@ -58,8 +58,13 @@ public class Main {
                 String str = s.nextLine();
                 System.out.print("is this all String digit ");
                 System.out.println(Task_8.CheckDigit(str));
-
-
+                break;
+            case 9:
+                System.out.print("Enter number n:");
+                n = s.nextInt();
+                System.out.print("Enter number k:");
+                int k = s.nextInt();
+                System.out.print("binomial coefficient is "+Task_9.binomialCoefficient(n,k));
         }
     }
 
