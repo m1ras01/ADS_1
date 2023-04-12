@@ -194,3 +194,93 @@ public class Task_7 {
 }
 ```
 
+<br/>
+<br/>
+<br/>
+
+# __Problem 8__
+### ___Explanation:___
+
+This code snippet is a recursive method that takes a String `str` as input and checks if the first character of the String is a digit. If it is, the method calls itself recursively with the substring of `str` starting from the second character. If the first character is not a digit, the method returns "No". The method returns "Yes" if the input string is empty.
+The `CheckDigit` method first checks if the length of the input string `str` is 0. If it is, the method returns "Yes". Otherwise, it checks if the first character of `str` is a digit. If it is, the method calls itself recursively with the substring of `str` starting from the second character. If the first character is not a digit, the method returns "No".
+
+<br/>
+
+### ___Solution:___
+```java
+public class Task_8 {
+    public static String CheckDigit(String str) {
+        if (str.length() == 0) { // base case: the string is empty
+            return "Yes"; // since the string is empty, it must contain only digits
+        }
+        if (Character.isDigit(str.charAt(0))) { // if the first character is a digit
+            return CheckDigit(str.substring(1)); // check the rest of the string recursively
+        } else { // if the first character is not a digit
+            return "No"; // the string does not contain only digits
+        }
+    }
+}
+```
+
+<br/>
+<br/>
+<br/>
+
+# __Problem 9__
+
+### ___Explanation___
+
+This method calculates the binomial coefficient of `n` and `k` using recursion. If `k` is equal to 0 or `n`, the method returns 1. Otherwise, it recursively calls itself with the parameters `n-1` and `k-1`, and `n-1` and `k`, and returns their sum.
+
+<br/>
+
+### ___Solution:___
+```java
+public class Task_9 {
+    public static int binomialCoefficient(int n, int k) {
+        if (k == 0 || k == n) {   // Base case: If k is 0 or equal to n, the coefficient is 1
+            return 1;
+        } else {   // Recursive case: the coefficient is the sum of the coefficients of the previous two rows in Pascal's triangle
+            return binomialCoefficient(n - 1, k - 1) + binomialCoefficient(n - 1, k);
+        }
+    }
+}
+```
+
+<br/>
+<br/>
+<br/>
+
+# __Problem 10__
+### ___Explanation:___
+This code snippet is a recursive method that calculates the greatest common divisor (GCD) of two input integers `n` and `k`. The GCD is the largest positive integer that divides both `n` and `k` without leaving a remainder.
+The `GCD` method first checks if `k` is equal to 0. If it is, the method returns `n` since the GCD of `n` and 0 is `n`. Otherwise, the method calculates the remainder `r` when `n` is divided by `k` and then calls itself recursively with `k` and `r`. This continues until `k` is equal to 0, at which point the method returns the value of `n`. The GCD is calculated using the Euclidean algorithm, which is a well-known algorithm for computing the GCD of two numbers.
+
+<br/>
+ 
+ ### ___Solution:___
+ ```java
+ public class Task_10 {
+    // This is a static method named "GCD" which takes two integer arguments: "n" and "k"
+// This method calculates and returns the greatest common divisor (GCD) of "n" and "k"
+    public static int GCD(int n, int k) {
+
+        // If "k" is equal to zero, then "n" is the GCD of "n" and "k"
+        if (k == 0) {
+            return n;
+        }
+        // Otherwise, calculate the remainder of "n" divided by "k" and recursively call GCD method
+        // with arguments "k" and the remainder until "k" becomes zero
+        else {
+            int r = n % k;
+            return GCD(k, r);
+        }
+    }
+
+
+}
+```
+
+<br/>
+
+![](https://c.tenor.com/5GmWzNk994gAAAAC/thank-you-obama.gif)
